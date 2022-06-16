@@ -1,0 +1,81 @@
+.body {
+  background-color: gray;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(10px) rotate(60deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-10px) rotate(-60deg);
+}
+
+.bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black
+}
+
+.btn-home {
+  background-color: gray;
+  font-size: 30px;
+  height: 80px;
+  width: 300px;
+  cursor: pointer;
+}
+.btn-red {
+  background-color: #ff0000;
+  font-size: 30px;
+  height: 80px;
+  width: 300px;
+  cursor: pointer;
+}
+.btn-orange {
+  background-color: orange;
+  font-size: 30px;
+  height: 80px;
+  width: 300px;
+  cursor: pointer;
+}
+.btn-purple {
+  background-color: purple;
+  font-size: 30px;
+  height: 80px;
+  width: 300px;
+  cursor: pointer;
+}
+.btn-green {
+  background-color: green;
+  font-size: 30px;
+  height: 80px;
+  width: 300px;
+  cursor: pointer;
+  
+}
+
+.nav-menu {
+  display: flex;
+  position: fixed;
+  left: -100%;
+  top: 50px;
+  padding: 9px;
+  transition: 0.3s;
+  flex-direction: column;
+  height: 100vh;
+
+}
+
+.nav-menu.active {
+  left: 0;
+}
